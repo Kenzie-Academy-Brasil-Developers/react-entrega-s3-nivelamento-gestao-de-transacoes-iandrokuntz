@@ -30,7 +30,7 @@ const CashFlow = ({ transactions }) => {
         return (
           <ul key={index}>
             <h3>{item.name} </h3>
-            <li>Quantity:  <strong>R$ {item.quantity}</strong></li>
+            <li>Quantity:  <strong>{item.quantity}</strong></li>
             <li>Price:  <strong>R$ {item.price}</strong></li>
           </ul>
         )
@@ -45,7 +45,7 @@ const CashFlow = ({ transactions }) => {
         return (
           <ul key={index}>
             <h3>{item.name}</h3>
-            <li>Quantity:  <strong className="negative">R$ {item.quantity}</strong></li>
+            <li>Quantity:  <strong className="negative">{item.quantity}</strong></li>
             <li>Price:  <strong>R$ {item.price}</strong></li>
           </ul>
         )
