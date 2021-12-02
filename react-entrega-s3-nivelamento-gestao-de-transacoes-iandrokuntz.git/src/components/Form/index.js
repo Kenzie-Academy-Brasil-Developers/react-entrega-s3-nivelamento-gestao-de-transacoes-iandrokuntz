@@ -29,8 +29,12 @@ const Form = ({ transactions, setTransactions }) => {
 
     const onSubmit = () => {
 
+      if(price > 0){
 
-      setTransactions([...transactions, newFruit])
+        setTransactions([...transactions, newFruit])
+      }else{
+        alert("The price cannot be less than 0")
+      }
     };
   
   
